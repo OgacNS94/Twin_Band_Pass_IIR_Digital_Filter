@@ -1,0 +1,1991 @@
+Model {
+  Name			  "drugi_filtar_simulink"
+  Version		  7.6
+  MdlSubVersion		  0
+  GraphicalInterface {
+    NumRootInports	    0
+    NumRootOutports	    0
+    ParameterArgumentNames  ""
+    ComputedModelVersion    "1.14"
+    NumModelReferences	    0
+    NumTestPointedSignals   0
+  }
+  SavedCharacterEncoding  "windows-1250"
+  SaveDefaultBlockParams  on
+  ScopeRefreshTime	  0.035000
+  OverrideScopeRefreshTime on
+  DisableAllScopes	  off
+  DataTypeOverride	  "UseLocalSettings"
+  DataTypeOverrideAppliesTo "AllNumericTypes"
+  MinMaxOverflowLogging	  "UseLocalSettings"
+  MinMaxOverflowArchiveMode "Overwrite"
+  MaxMDLFileLineLength	  120
+  Created		  "Sun Jun 26 17:18:27 2016"
+  Creator		  "Ogi"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "OGNJEN"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Fri Aug 05 13:22:22 2016"
+  RTWModifiedTimeStamp	  392304126
+  ModelVersionFormat	  "1.%<AutoIncrement:14>"
+  ConfigurationManager	  "None"
+  SampleTimeColors	  off
+  SampleTimeAnnotations	  off
+  LibraryLinkDisplay	  "none"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ShowTestPointIcons	  on
+  ShowSignalResolutionIcons on
+  ShowViewerIcons	  on
+  SortedOrder		  off
+  ExecutionContextIcon	  off
+  ShowLinearizationAnnotations on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  SimulationMode	  "normal"
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  CovForceBlockReductionOff on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeVarName	  "covCumulativeData"
+  CovCumulativeReport	  off
+  CovReportOnPause	  on
+  CovModelRefEnable	  "Off"
+  CovExternalEMLEnable	  off
+  ExtModeBatchMode	  off
+  ExtModeEnableFloating	  on
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigDurationFloating "auto"
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  BufferReuse		  on
+  ShowModelReferenceBlockVersion off
+  ShowModelReferenceBlockIO off
+  Array {
+    Type		    "Handle"
+    Dimension		    1
+    Simulink.ConfigSet {
+      $ObjectID		      1
+      Version		      "1.10.0"
+      Array {
+	Type			"Handle"
+	Dimension		8
+	Simulink.SolverCC {
+	  $ObjectID		  2
+	  Version		  "1.10.0"
+	  StartTime		  "0.0"
+	  StopTime		  "15000"
+	  AbsTol		  "auto"
+	  FixedStep		  "auto"
+	  InitialStep		  "auto"
+	  MaxNumMinSteps	  "-1"
+	  MaxOrder		  5
+	  ZcThreshold		  "auto"
+	  ConsecutiveZCsStepRelTol "10*128*eps"
+	  MaxConsecutiveZCs	  "1000"
+	  ExtrapolationOrder	  4
+	  NumberNewtonIterations  1
+	  MaxStep		  "1"
+	  MinStep		  "auto"
+	  MaxConsecutiveMinStep	  "1"
+	  RelTol		  "1e-3"
+	  SolverMode		  "Auto"
+	  ConcurrentTasks	  off
+	  Solver		  "ode45"
+	  SolverName		  "ode45"
+	  SolverJacobianMethodControl "auto"
+	  ShapePreserveControl	  "DisableAll"
+	  ZeroCrossControl	  "UseLocalSettings"
+	  ZeroCrossAlgorithm	  "Nonadaptive"
+	  AlgebraicLoopSolver	  "TrustRegion"
+	  SolverResetMethod	  "Fast"
+	  PositivePriorityOrder	  off
+	  AutoInsertRateTranBlk	  off
+	  SampleTimeConstraint	  "Unconstrained"
+	  InsertRTBMode		  "Whenever possible"
+	}
+	Simulink.DataIOCC {
+	  $ObjectID		  3
+	  Version		  "1.10.0"
+	  Decimation		  "1"
+	  ExternalInput		  "[t, u]"
+	  FinalStateName	  "xFinal"
+	  InitialState		  "xInitial"
+	  LimitDataPoints	  on
+	  MaxDataPoints		  "1000"
+	  LoadExternalInput	  off
+	  LoadInitialState	  off
+	  SaveFinalState	  off
+	  SaveCompleteFinalSimState off
+	  SaveFormat		  "Array"
+	  SaveOutput		  on
+	  SaveState		  off
+	  SignalLogging		  on
+	  DSMLogging		  on
+	  InspectSignalLogs	  off
+	  SaveTime		  on
+	  ReturnWorkspaceOutputs  off
+	  StateSaveName		  "xout"
+	  TimeSaveName		  "tout"
+	  OutputSaveName	  "yout"
+	  SignalLoggingName	  "logsout"
+	  DSMLoggingName	  "dsmout"
+	  OutputOption		  "RefineOutputTimes"
+	  OutputTimes		  "[]"
+	  ReturnWorkspaceOutputsName "out"
+	  Refine		  "1"
+	}
+	Simulink.OptimizationCC {
+	  $ObjectID		  4
+	  Version		  "1.10.0"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    8
+	    Cell		    "BooleansAsBitfields"
+	    Cell		    "PassReuseOutputArgsAs"
+	    Cell		    "PassReuseOutputArgsThreshold"
+	    Cell		    "ZeroExternalMemoryAtStartup"
+	    Cell		    "ZeroInternalMemoryAtStartup"
+	    Cell		    "OptimizeModelRefInitCode"
+	    Cell		    "NoFixptDivByZeroProtection"
+	    Cell		    "UseSpecifiedMinMax"
+	    PropName		    "DisabledProps"
+	  }
+	  BlockReduction	  on
+	  BooleanDataType	  on
+	  ConditionallyExecuteInputs on
+	  InlineParams		  off
+	  UseIntDivNetSlope	  off
+	  UseSpecifiedMinMax	  off
+	  InlineInvariantSignals  off
+	  OptimizeBlockIOStorage  on
+	  BufferReuse		  on
+	  EnhancedBackFolding	  off
+	  StrengthReduction	  off
+	  ExpressionFolding	  on
+	  BooleansAsBitfields	  off
+	  BitfieldContainerType	  "uint_T"
+	  EnableMemcpy		  on
+	  MemcpyThreshold	  64
+	  PassReuseOutputArgsAs	  "Structure reference"
+	  ExpressionDepthLimit	  2147483647
+	  FoldNonRolledExpr	  on
+	  LocalBlockOutputs	  on
+	  RollThreshold		  5
+	  SystemCodeInlineAuto	  off
+	  StateBitsets		  off
+	  DataBitsets		  off
+	  UseTempVars		  off
+	  ZeroExternalMemoryAtStartup on
+	  ZeroInternalMemoryAtStartup on
+	  InitFltsAndDblsToZero	  off
+	  NoFixptDivByZeroProtection off
+	  EfficientFloat2IntCast  off
+	  EfficientMapNaN2IntZero on
+	  OptimizeModelRefInitCode off
+	  LifeSpan		  "inf"
+	  MaxStackSize		  "Inherit from target"
+	  BufferReusableBoundary  on
+	  SimCompilerOptimization "Off"
+	  AccelVerboseBuild	  off
+	}
+	Simulink.DebuggingCC {
+	  $ObjectID		  5
+	  Version		  "1.10.0"
+	  RTPrefix		  "error"
+	  ConsistencyChecking	  "none"
+	  ArrayBoundsChecking	  "none"
+	  SignalInfNanChecking	  "none"
+	  SignalRangeChecking	  "none"
+	  ReadBeforeWriteMsg	  "UseLocalSettings"
+	  WriteAfterWriteMsg	  "UseLocalSettings"
+	  WriteAfterReadMsg	  "UseLocalSettings"
+	  AlgebraicLoopMsg	  "warning"
+	  ArtificialAlgebraicLoopMsg "warning"
+	  SaveWithDisabledLinksMsg "warning"
+	  SaveWithParameterizedLinksMsg	"warning"
+	  CheckSSInitialOutputMsg on
+	  UnderspecifiedInitializationDetection	"Classic"
+	  MergeDetectMultiDrivingBlocksExec "none"
+	  CheckExecutionContextPreStartOutputMsg off
+	  CheckExecutionContextRuntimeOutputMsg	off
+	  SignalResolutionControl "UseLocalSettings"
+	  BlockPriorityViolationMsg "warning"
+	  MinStepSizeMsg	  "warning"
+	  TimeAdjustmentMsg	  "none"
+	  MaxConsecutiveZCsMsg	  "error"
+	  MaskedZcDiagnostic	  "warning"
+	  IgnoredZcDiagnostic	  "warning"
+	  SolverPrmCheckMsg	  "warning"
+	  InheritedTsInSrcMsg	  "warning"
+	  DiscreteInheritContinuousMsg "warning"
+	  MultiTaskDSMMsg	  "error"
+	  MultiTaskCondExecSysMsg "error"
+	  MultiTaskRateTransMsg	  "error"
+	  SingleTaskRateTransMsg  "none"
+	  TasksWithSamePriorityMsg "warning"
+	  SigSpecEnsureSampleTimeMsg "warning"
+	  CheckMatrixSingularityMsg "none"
+	  IntegerOverflowMsg	  "warning"
+	  Int32ToFloatConvMsg	  "warning"
+	  ParameterDowncastMsg	  "error"
+	  ParameterOverflowMsg	  "error"
+	  ParameterUnderflowMsg	  "none"
+	  ParameterPrecisionLossMsg "warning"
+	  ParameterTunabilityLossMsg "warning"
+	  FixptConstUnderflowMsg  "none"
+	  FixptConstOverflowMsg	  "none"
+	  FixptConstPrecisionLossMsg "none"
+	  UnderSpecifiedDataTypeMsg "none"
+	  UnnecessaryDatatypeConvMsg "none"
+	  VectorMatrixConversionMsg "none"
+	  InvalidFcnCallConnMsg	  "error"
+	  FcnCallInpInsideContextMsg "Use local settings"
+	  SignalLabelMismatchMsg  "none"
+	  UnconnectedInputMsg	  "warning"
+	  UnconnectedOutputMsg	  "warning"
+	  UnconnectedLineMsg	  "warning"
+	  SFcnCompatibilityMsg	  "none"
+	  UniqueDataStoreMsg	  "none"
+	  BusObjectLabelMismatch  "warning"
+	  RootOutportRequireBusObject "warning"
+	  AssertControl		  "UseLocalSettings"
+	  EnableOverflowDetection off
+	  ModelReferenceIOMsg	  "none"
+	  ModelReferenceMultiInstanceNormalModeStructChecksumCheck "error"
+	  ModelReferenceVersionMismatchMessage "none"
+	  ModelReferenceIOMismatchMessage "none"
+	  ModelReferenceCSMismatchMessage "none"
+	  UnknownTsInhSupMsg	  "warning"
+	  ModelReferenceDataLoggingMessage "warning"
+	  ModelReferenceSymbolNameMessage "warning"
+	  ModelReferenceExtraNoncontSigs "error"
+	  StateNameClashWarn	  "warning"
+	  SimStateInterfaceChecksumMismatchMsg "warning"
+	  InitInArrayFormatMsg	  "warning"
+	  StrictBusMsg		  "ErrorLevel1"
+	  BusNameAdapt		  "WarnAndRepair"
+	  NonBusSignalsTreatedAsBus "none"
+	  LoggingUnavailableSignals "error"
+	  BlockIODiagnostic	  "none"
+	  SFUnusedDataAndEventsDiag "warning"
+	  SFUnexpectedBacktrackingDiag "warning"
+	  SFInvalidInputDataAccessInChartInitDiag "warning"
+	  SFNoUnconditionalDefaultTransitionDiag "warning"
+	  SFTransitionOutsideNaturalParentDiag "warning"
+	}
+	Simulink.HardwareCC {
+	  $ObjectID		  6
+	  Version		  "1.10.0"
+	  ProdBitPerChar	  8
+	  ProdBitPerShort	  16
+	  ProdBitPerInt		  32
+	  ProdBitPerLong	  32
+	  ProdBitPerFloat	  32
+	  ProdBitPerDouble	  64
+	  ProdBitPerPointer	  32
+	  ProdLargestAtomicInteger "Char"
+	  ProdLargestAtomicFloat  "None"
+	  ProdIntDivRoundTo	  "Undefined"
+	  ProdEndianess		  "Unspecified"
+	  ProdWordSize		  32
+	  ProdShiftRightIntArith  on
+	  ProdHWDeviceType	  "32-bit Generic"
+	  TargetBitPerChar	  8
+	  TargetBitPerShort	  16
+	  TargetBitPerInt	  32
+	  TargetBitPerLong	  32
+	  TargetBitPerFloat	  32
+	  TargetBitPerDouble	  64
+	  TargetBitPerPointer	  32
+	  TargetLargestAtomicInteger "Char"
+	  TargetLargestAtomicFloat "None"
+	  TargetShiftRightIntArith on
+	  TargetIntDivRoundTo	  "Undefined"
+	  TargetEndianess	  "Unspecified"
+	  TargetWordSize	  32
+	  TargetTypeEmulationWarnSuppressLevel 0
+	  TargetPreprocMaxBitsSint 32
+	  TargetPreprocMaxBitsUint 32
+	  TargetHWDeviceType	  "Specified"
+	  TargetUnknown		  off
+	  ProdEqTarget		  on
+	}
+	Simulink.ModelReferenceCC {
+	  $ObjectID		  7
+	  Version		  "1.10.0"
+	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
+	  CheckModelReferenceTargetMessage "error"
+	  EnableParallelModelReferenceBuilds off
+	  ParallelModelReferenceErrorOnInvalidPool on
+	  ParallelModelReferenceMATLABWorkerInit "None"
+	  ModelReferenceNumInstancesAllowed "Multi"
+	  PropagateVarSize	  "Infer from blocks in model"
+	  ModelReferencePassRootInputsByReference on
+	  ModelReferenceMinAlgLoopOccurrences off
+	  PropagateSignalLabelsOutOfModel off
+	  SupportModelReferenceSimTargetCustomCode off
+	}
+	Simulink.SFSimCC {
+	  $ObjectID		  8
+	  Version		  "1.10.0"
+	  SFSimEnableDebug	  on
+	  SFSimOverflowDetection  on
+	  SFSimEcho		  on
+	  SimBlas		  on
+	  SimCtrlC		  on
+	  SimExtrinsic		  on
+	  SimIntegrity		  on
+	  SimUseLocalCustomCode	  off
+	  SimParseCustomCode	  on
+	  SimBuildMode		  "sf_incremental_build"
+	}
+	Simulink.RTWCC {
+	  $BackupClass		  "Simulink.RTWCC"
+	  $ObjectID		  9
+	  Version		  "1.10.0"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    7
+	    Cell		    "IncludeHyperlinkInReport"
+	    Cell		    "GenerateTraceInfo"
+	    Cell		    "GenerateTraceReport"
+	    Cell		    "GenerateTraceReportSl"
+	    Cell		    "GenerateTraceReportSf"
+	    Cell		    "GenerateTraceReportEml"
+	    Cell		    "GenerateSLWebview"
+	    PropName		    "DisabledProps"
+	  }
+	  SystemTargetFile	  "grt.tlc"
+	  GenCodeOnly		  off
+	  MakeCommand		  "make_rtw"
+	  GenerateMakefile	  on
+	  TemplateMakefile	  "grt_default_tmf"
+	  GenerateReport	  off
+	  SaveLog		  off
+	  RTWVerbose		  on
+	  RetainRTWFile		  off
+	  ProfileTLC		  off
+	  TLCDebug		  off
+	  TLCCoverage		  off
+	  TLCAssert		  off
+	  ProcessScriptMode	  "Default"
+	  ConfigurationMode	  "Optimized"
+	  ConfigAtBuild		  off
+	  RTWUseLocalCustomCode	  off
+	  RTWUseSimCustomCode	  off
+	  IncludeHyperlinkInReport off
+	  LaunchReport		  off
+	  TargetLang		  "C"
+	  IncludeBusHierarchyInRTWFileBlockHierarchyMap	off
+	  IncludeERTFirstTime	  off
+	  GenerateTraceInfo	  off
+	  GenerateTraceReport	  off
+	  GenerateTraceReportSl	  off
+	  GenerateTraceReportSf	  off
+	  GenerateTraceReportEml  off
+	  GenerateCodeInfo	  off
+	  GenerateSLWebview	  off
+	  RTWCompilerOptimization "Off"
+	  CheckMdlBeforeBuild	  "Off"
+	  CustomRebuildMode	  "OnUpdate"
+	  Array {
+	    Type		    "Handle"
+	    Dimension		    2
+	    Simulink.CodeAppCC {
+	      $ObjectID		      10
+	      Version		      "1.10.0"
+	      Array {
+		Type			"Cell"
+		Dimension		21
+		Cell			"IgnoreCustomStorageClasses"
+		Cell			"IgnoreTestpoints"
+		Cell			"InsertBlockDesc"
+		Cell			"InsertPolySpaceComments"
+		Cell			"SFDataObjDesc"
+		Cell			"MATLABFcnDesc"
+		Cell			"SimulinkDataObjDesc"
+		Cell			"DefineNamingRule"
+		Cell			"SignalNamingRule"
+		Cell			"ParamNamingRule"
+		Cell			"InlinedPrmAccess"
+		Cell			"CustomSymbolStr"
+		Cell			"CustomSymbolStrGlobalVar"
+		Cell			"CustomSymbolStrType"
+		Cell			"CustomSymbolStrField"
+		Cell			"CustomSymbolStrFcn"
+		Cell			"CustomSymbolStrFcnArg"
+		Cell			"CustomSymbolStrBlkIO"
+		Cell			"CustomSymbolStrTmpVar"
+		Cell			"CustomSymbolStrMacro"
+		Cell			"ReqsInCode"
+		PropName		"DisabledProps"
+	      }
+	      ForceParamTrailComments off
+	      GenerateComments	      on
+	      IgnoreCustomStorageClasses on
+	      IgnoreTestpoints	      off
+	      IncHierarchyInIds	      off
+	      MaxIdLength	      31
+	      PreserveName	      off
+	      PreserveNameWithParent  off
+	      ShowEliminatedStatement off
+	      IncAutoGenComments      off
+	      SimulinkDataObjDesc     off
+	      SFDataObjDesc	      off
+	      MATLABFcnDesc	      off
+	      IncDataTypeInIds	      off
+	      MangleLength	      1
+	      CustomSymbolStrGlobalVar "$R$N$M"
+	      CustomSymbolStrType     "$N$R$M"
+	      CustomSymbolStrField    "$N$M"
+	      CustomSymbolStrFcn      "$R$N$M$F"
+	      CustomSymbolStrFcnArg   "rt$I$N$M"
+	      CustomSymbolStrBlkIO    "rtb_$N$M"
+	      CustomSymbolStrTmpVar   "$N$M"
+	      CustomSymbolStrMacro    "$R$N$M"
+	      DefineNamingRule	      "None"
+	      ParamNamingRule	      "None"
+	      SignalNamingRule	      "None"
+	      InsertBlockDesc	      off
+	      InsertPolySpaceComments off
+	      SimulinkBlockComments   on
+	      MATLABSourceComments    off
+	      EnableCustomComments    off
+	      InlinedPrmAccess	      "Literals"
+	      ReqsInCode	      off
+	      UseSimReservedNames     off
+	    }
+	    Simulink.GRTTargetCC {
+	      $BackupClass	      "Simulink.TargetCC"
+	      $ObjectID		      11
+	      Version		      "1.10.0"
+	      Array {
+		Type			"Cell"
+		Dimension		16
+		Cell			"GeneratePreprocessorConditionals"
+		Cell			"IncludeMdlTerminateFcn"
+		Cell			"CombineOutputUpdateFcns"
+		Cell			"SuppressErrorStatus"
+		Cell			"ERTCustomFileBanners"
+		Cell			"GenerateSampleERTMain"
+		Cell			"GenerateTestInterfaces"
+		Cell			"ModelStepFunctionPrototypeControlCompliant"
+		Cell			"CPPClassGenCompliant"
+		Cell			"MultiInstanceERTCode"
+		Cell			"PurelyIntegerCode"
+		Cell			"SupportComplex"
+		Cell			"SupportAbsoluteTime"
+		Cell			"SupportContinuousTime"
+		Cell			"SupportNonInlinedSFcns"
+		Cell			"PortableWordSizes"
+		PropName		"DisabledProps"
+	      }
+	      TargetFcnLib	      "ansi_tfl_table_tmw.mat"
+	      TargetLibSuffix	      ""
+	      TargetPreCompLibLocation ""
+	      TargetFunctionLibrary   "ANSI_C"
+	      UtilityFuncGeneration   "Auto"
+	      ERTMultiwordTypeDef     "System defined"
+	      ERTCodeCoverageTool     "None"
+	      ERTMultiwordLength      256
+	      MultiwordLength	      2048
+	      GenerateFullHeader      on
+	      GenerateSampleERTMain   off
+	      GenerateTestInterfaces  off
+	      IsPILTarget	      off
+	      ModelReferenceCompliant on
+	      ParMdlRefBuildCompliant on
+	      CompOptLevelCompliant   on
+	      IncludeMdlTerminateFcn  on
+	      GeneratePreprocessorConditionals "Disable all"
+	      CombineOutputUpdateFcns off
+	      CombineSignalStateStructs	off
+	      SuppressErrorStatus     off
+	      ERTFirstTimeCompliant   off
+	      IncludeFileDelimiter    "Auto"
+	      ERTCustomFileBanners    off
+	      SupportAbsoluteTime     on
+	      LogVarNameModifier      "rt_"
+	      MatFileLogging	      on
+	      MultiInstanceERTCode    off
+	      SupportNonFinite	      on
+	      SupportComplex	      on
+	      PurelyIntegerCode	      off
+	      SupportContinuousTime   on
+	      SupportNonInlinedSFcns  on
+	      SupportVariableSizeSignals off
+	      EnableShiftOperators    on
+	      ParenthesesLevel	      "Nominal"
+	      PortableWordSizes	      off
+	      ModelStepFunctionPrototypeControlCompliant off
+	      CPPClassGenCompliant    off
+	      AutosarCompliant	      off
+	      UseMalloc		      off
+	      ExtMode		      off
+	      ExtModeStaticAlloc      off
+	      ExtModeTesting	      off
+	      ExtModeStaticAllocSize  1000000
+	      ExtModeTransport	      0
+	      ExtModeMexFile	      "ext_comm"
+	      ExtModeIntrfLevel	      "Level1"
+	      RTWCAPISignals	      off
+	      RTWCAPIParams	      off
+	      RTWCAPIStates	      off
+	      GenerateASAP2	      off
+	    }
+	    PropName		    "Components"
+	  }
+	}
+	PropName		"Components"
+      }
+      Name		      "Configuration"
+      CurrentDlgPage	      "Solver"
+      ConfigPrmDlgPosition    " [ 520, 225, 1400, 855 ] "
+    }
+    PropName		    "ConfigurationSets"
+  }
+  Simulink.ConfigSet {
+    $PropName		    "ActiveConfigurationSet"
+    $ObjectID		    1
+  }
+  BlockDefaults {
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+    BlockRotation	    0
+    BlockMirror		    off
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    UseDisplayTextAsClickCallback off
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      FromWorkspace
+      VariableName	      "simulink_input"
+      SampleTime	      "-1"
+      Interpolate	      on
+      ZeroCross		      off
+      OutputAfterFinalValue   "Extrapolation"
+    }
+    Block {
+      BlockType		      Gain
+      Gain		      "1"
+      Multiplication	      "Element-wise(K.*u)"
+      ParamMin		      "[]"
+      ParamMax		      "[]"
+      ParamDataTypeStr	      "Inherit: Same as input"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Same as input"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Scope
+      ModelBased	      off
+      TickLabels	      "OneTimeTick"
+      ZoomMode		      "on"
+      Grid		      "on"
+      TimeRange		      "auto"
+      YMin		      "-5"
+      YMax		      "5"
+      SaveToWorkspace	      off
+      SaveName		      "ScopeData"
+      LimitDataPoints	      on
+      MaxDataPoints	      "5000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Sum
+      IconShape		      "rectangular"
+      Inputs		      "++"
+      CollapseMode	      "All dimensions"
+      CollapseDim	      "1"
+      InputSameDT	      on
+      AccumDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Same as first input"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      VariableName	      "simulink_output"
+      MaxDataPoints	      "1000"
+      Decimation	      "1"
+      SampleTime	      "0"
+      FixptAsFi		      off
+    }
+  }
+  System {
+    Name		    "drugi_filtar_simulink"
+    Location		    [2, 82, 1245, 771]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    212
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "usletter"
+    PaperUnits		    "inches"
+    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+    TiledPageScale	    1
+    ShowPageBoundaries	    off
+    ZoomFactor		    "93"
+    ReportName		    "simulink-default.rpt"
+    SIDHighWatermark	    "107"
+    Block {
+      BlockType		      Sum
+      Name		      "Adder10"
+      SID		      "106"
+      Ports		      [3, 1]
+      Position		      [440, 1355, 480, 1385]
+      BlockRotation	      270
+      IconShape		      "round"
+      Inputs		      "+++"
+      InputSameDT	      off
+      OutDataTypeStr	      "fixdt(1, x , y)"
+      RndMeth		      "Nearest"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Adder11"
+      SID		      "90"
+      Ports		      [2, 1]
+      Position		      [440, 1500, 480, 1530]
+      BlockRotation	      270
+      IconShape		      "round"
+      InputSameDT	      off
+      OutDataTypeStr	      "fixdt(1, x , y)"
+      RndMeth		      "Nearest"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Adder2"
+      SID		      "54"
+      Ports		      [3, 1]
+      Position		      [440, 265, 480, 295]
+      BlockRotation	      270
+      IconShape		      "round"
+      Inputs		      "+++"
+      InputSameDT	      off
+      OutDataTypeStr	      "fixdt(1, x , y)"
+      RndMeth		      "Nearest"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Adder3"
+      SID		      "55"
+      Ports		      [3, 1]
+      Position		      [440, 400, 480, 430]
+      BlockRotation	      270
+      IconShape		      "round"
+      Inputs		      "+++"
+      InputSameDT	      off
+      OutDataTypeStr	      "fixdt(1, x , y)"
+      RndMeth		      "Nearest"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Adder4"
+      SID		      "100"
+      Ports		      [3, 1]
+      Position		      [440, 550, 480, 580]
+      BlockRotation	      270
+      IconShape		      "round"
+      Inputs		      "+++"
+      InputSameDT	      off
+      OutDataTypeStr	      "fixdt(1, x , y)"
+      RndMeth		      "Nearest"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Adder5"
+      SID		      "101"
+      Ports		      [3, 1]
+      Position		      [440, 685, 480, 715]
+      BlockRotation	      270
+      IconShape		      "round"
+      Inputs		      "+++"
+      InputSameDT	      off
+      OutDataTypeStr	      "fixdt(1, x , y)"
+      RndMeth		      "Nearest"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Adder6"
+      SID		      "102"
+      Ports		      [3, 1]
+      Position		      [440, 810, 480, 840]
+      BlockRotation	      270
+      IconShape		      "round"
+      Inputs		      "+++"
+      InputSameDT	      off
+      OutDataTypeStr	      "fixdt(1, x , y)"
+      RndMeth		      "Nearest"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Adder7"
+      SID		      "103"
+      Ports		      [3, 1]
+      Position		      [440, 935, 480, 965]
+      BlockRotation	      270
+      IconShape		      "round"
+      Inputs		      "+++"
+      InputSameDT	      off
+      OutDataTypeStr	      "fixdt(1, x , y)"
+      RndMeth		      "Nearest"
+      SaturateOnIntegerOverflow	off
+      Port {
+	PortNumber		1
+	Name			"s25"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Adder8"
+      SID		      "104"
+      Ports		      [3, 1]
+      Position		      [440, 1070, 480, 1100]
+      BlockRotation	      270
+      IconShape		      "round"
+      Inputs		      "+++"
+      InputSameDT	      off
+      OutDataTypeStr	      "fixdt(1, x , y)"
+      RndMeth		      "Nearest"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Adder9"
+      SID		      "105"
+      Ports		      [3, 1]
+      Position		      [440, 1220, 480, 1250]
+      BlockRotation	      270
+      IconShape		      "round"
+      Inputs		      "+++"
+      InputSameDT	      off
+      OutDataTypeStr	      "fixdt(1, x , y)"
+      RndMeth		      "Nearest"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      FromWorkspace
+      Name		      "From\nWorkspace"
+      SID		      "51"
+      Position		      [110, 98, 175, 122]
+      VariableName	      "u_sim"
+      ZeroCross		      on
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Gain1"
+      SID		      "58"
+      Position		      [550, 265, 580, 295]
+      BlockMirror	      on
+      NamePlacement	      "alternate"
+      ShowName		      off
+      Gain		      "7.831829494256413"
+      ParamDataTypeStr	      "fixdt(1, j , k)"
+      OutDataTypeStr	      "fixdt(1, x , y)"
+      RndMeth		      "Nearest"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Gain2"
+      SID		      "76"
+      Position		      [550, 935, 580, 965]
+      BlockMirror	      on
+      NamePlacement	      "alternate"
+      ShowName		      off
+      Gain		      "-1.076839442192928e+02"
+      ParamDataTypeStr	      "fixdt(1, j , k)"
+      OutDataTypeStr	      "fixdt(1, x , y)"
+      RndMeth		      "Nearest"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Gain3"
+      SID		      "77"
+      Position		      [550, 1220, 580, 1250]
+      BlockMirror	      on
+      NamePlacement	      "alternate"
+      ShowName		      off
+      Gain		      "-26.868177197296017"
+      ParamDataTypeStr	      "fixdt(1, j , k)"
+      OutDataTypeStr	      "fixdt(1, x , y)"
+      RndMeth		      "Nearest"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Gain8"
+      SID		      "59"
+      Position		      [550, 550, 580, 580]
+      BlockMirror	      on
+      NamePlacement	      "alternate"
+      ShowName		      off
+      Gain		      "68.832389011750000"
+      ParamDataTypeStr	      "fixdt(1, j , k)"
+      OutDataTypeStr	      "fixdt(1, x , y)"
+      RndMeth		      "Nearest"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Scope"
+      SID		      "52"
+      Ports		      [1]
+      Position		      [1100, 219, 1130, 251]
+      Floating		      off
+      Location		      [969, 56, 1913, 1041]
+      Open		      off
+      NumInputPorts	      "1"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      DataFormat	      "StructureWithTime"
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Shift1"
+      SID		      "60"
+      Ports		      [1, 1]
+      Position		      [443, 200, 477, 235]
+      BlockRotation	      270
+      LibraryVersion	      "1.225"
+      UserDataPersistent      on
+      UserData		      "DataTag0"
+      SourceBlock	      "simulink/Discrete/Integer Delay"
+      SourceType	      "Integer Delay"
+      NumDelays		      "1"
+      InputProcessing	      "Elements as channels (sample based)"
+      vinit		      "0.0"
+      samptime		      "-1"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Shift10"
+      SID		      "91"
+      Ports		      [1, 1]
+      Position		      [443, 1435, 477, 1470]
+      BlockRotation	      270
+      LibraryVersion	      "1.225"
+      UserDataPersistent      on
+      UserData		      "DataTag1"
+      SourceBlock	      "simulink/Discrete/Integer Delay"
+      SourceType	      "Integer Delay"
+      NumDelays		      "1"
+      InputProcessing	      "Elements as channels (sample based)"
+      vinit		      "0.0"
+      samptime		      "-1"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Shift2"
+      SID		      "61"
+      Ports		      [1, 1]
+      Position		      [443, 335, 477, 370]
+      BlockRotation	      270
+      LibraryVersion	      "1.225"
+      UserDataPersistent      on
+      UserData		      "DataTag2"
+      SourceBlock	      "simulink/Discrete/Integer Delay"
+      SourceType	      "Integer Delay"
+      NumDelays		      "1"
+      InputProcessing	      "Elements as channels (sample based)"
+      vinit		      "0.0"
+      samptime		      "-1"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Shift3"
+      SID		      "62"
+      Ports		      [1, 1]
+      Position		      [443, 485, 477, 520]
+      BlockRotation	      270
+      LibraryVersion	      "1.225"
+      UserDataPersistent      on
+      UserData		      "DataTag3"
+      SourceBlock	      "simulink/Discrete/Integer Delay"
+      SourceType	      "Integer Delay"
+      NumDelays		      "1"
+      InputProcessing	      "Elements as channels (sample based)"
+      vinit		      "0.0"
+      samptime		      "-1"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Shift4"
+      SID		      "63"
+      Ports		      [1, 1]
+      Position		      [443, 620, 477, 655]
+      BlockRotation	      270
+      LibraryVersion	      "1.225"
+      UserDataPersistent      on
+      UserData		      "DataTag4"
+      SourceBlock	      "simulink/Discrete/Integer Delay"
+      SourceType	      "Integer Delay"
+      NumDelays		      "1"
+      InputProcessing	      "Elements as channels (sample based)"
+      vinit		      "0.0"
+      samptime		      "-1"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Shift5"
+      SID		      "96"
+      Ports		      [1, 1]
+      Position		      [443, 750, 477, 785]
+      BlockRotation	      270
+      LibraryVersion	      "1.225"
+      UserDataPersistent      on
+      UserData		      "DataTag5"
+      SourceBlock	      "simulink/Discrete/Integer Delay"
+      SourceType	      "Integer Delay"
+      NumDelays		      "1"
+      InputProcessing	      "Elements as channels (sample based)"
+      vinit		      "0.0"
+      samptime		      "-1"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Shift6"
+      SID		      "78"
+      Ports		      [1, 1]
+      Position		      [443, 875, 477, 910]
+      BlockRotation	      270
+      LibraryVersion	      "1.225"
+      UserDataPersistent      on
+      UserData		      "DataTag6"
+      SourceBlock	      "simulink/Discrete/Integer Delay"
+      SourceType	      "Integer Delay"
+      NumDelays		      "1"
+      InputProcessing	      "Elements as channels (sample based)"
+      vinit		      "0.0"
+      samptime		      "-1"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Shift7"
+      SID		      "79"
+      Ports		      [1, 1]
+      Position		      [443, 1005, 477, 1040]
+      BlockRotation	      270
+      LibraryVersion	      "1.225"
+      UserDataPersistent      on
+      UserData		      "DataTag7"
+      SourceBlock	      "simulink/Discrete/Integer Delay"
+      SourceType	      "Integer Delay"
+      NumDelays		      "1"
+      InputProcessing	      "Elements as channels (sample based)"
+      vinit		      "0.0"
+      samptime		      "-1"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Shift8"
+      SID		      "80"
+      Ports		      [1, 1]
+      Position		      [443, 1140, 477, 1175]
+      BlockRotation	      270
+      LibraryVersion	      "1.225"
+      UserDataPersistent      on
+      UserData		      "DataTag8"
+      SourceBlock	      "simulink/Discrete/Integer Delay"
+      SourceType	      "Integer Delay"
+      NumDelays		      "1"
+      InputProcessing	      "Elements as channels (sample based)"
+      vinit		      "0.0"
+      samptime		      "-1"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Shift9"
+      SID		      "81"
+      Ports		      [1, 1]
+      Position		      [443, 1290, 477, 1325]
+      BlockRotation	      270
+      LibraryVersion	      "1.225"
+      UserDataPersistent      on
+      UserData		      "DataTag9"
+      SourceBlock	      "simulink/Discrete/Integer Delay"
+      SourceType	      "Integer Delay"
+      NumDelays		      "1"
+      InputProcessing	      "Elements as channels (sample based)"
+      vinit		      "0.0"
+      samptime		      "-1"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "To Workspace"
+      SID		      "53"
+      Ports		      [1]
+      Position		      [950, 95, 1010, 125]
+      VariableName	      "simout"
+      MaxDataPoints	      "inf"
+      SampleTime	      "-1"
+      SaveFormat	      "Array"
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "a10"
+      SID		      "92"
+      Position		      [550, 1500, 580, 1530]
+      BlockMirror	      on
+      Gain		      "-0.861266958252022"
+      ParamDataTypeStr	      "fixdt(1, j , k)"
+      OutDataTypeStr	      "fixdt(1, x , y)"
+      RndMeth		      "Nearest"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "a2"
+      SID		      "64"
+      Position		      [550, 400, 580, 430]
+      BlockMirror	      on
+      Gain		      "-29.387062691907410"
+      ParamDataTypeStr	      "fixdt(1, j , k)"
+      OutDataTypeStr	      "fixdt(1, x , y)"
+      RndMeth		      "Nearest"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "a4"
+      SID		      "65"
+      Position		      [550, 685, 580, 715]
+      BlockMirror	      on
+      Gain		      "-1.109490504154942e+02"
+      ParamDataTypeStr	      "fixdt(1, j , k)"
+      OutDataTypeStr	      "fixdt(1, x , y)"
+      RndMeth		      "Nearest"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "a5"
+      SID		      "98"
+      Position		      [550, 810, 580, 840]
+      BlockMirror	      on
+      Gain		      "1.282840619136995e+02"
+      ParamDataTypeStr	      "fixdt(1, j , k)"
+      OutDataTypeStr	      "fixdt(1, x , y)"
+      RndMeth		      "Nearest"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "a7"
+      SID		      "82"
+      Position		      [550, 1070, 580, 1100]
+      BlockMirror	      on
+      Gain		      "64.840676961320910"
+      ParamDataTypeStr	      "fixdt(1, j , k)"
+      OutDataTypeStr	      "fixdt(1, x , y)"
+      RndMeth		      "Nearest"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "a9"
+      SID		      "83"
+      Position		      [550, 1355, 580, 1385]
+      BlockMirror	      on
+      Gain		      "6.949806704702247"
+      ParamDataTypeStr	      "fixdt(1, j , k)"
+      OutDataTypeStr	      "fixdt(1, x , y)"
+      RndMeth		      "Nearest"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "b0"
+      SID		      "66"
+      Position		      [335, 95, 365, 125]
+      Gain		      "1.110434514495799e-04"
+      ParamDataTypeStr	      "fixdt(1, j , k)"
+      OutDataTypeStr	      "fixdt(1,x,y)"
+      RndMeth		      "Nearest"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "b1"
+      SID		      "67"
+      Position		      [335, 265, 365, 295]
+      Gain		      "-7.002792846443515e-04"
+      ParamDataTypeStr	      "fixdt(1, j , k)"
+      OutDataTypeStr	      "fixdt(1, x , y)"
+      RndMeth		      "Nearest"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "b10"
+      SID		      "93"
+      Position		      [335, 1500, 365, 1530]
+      Gain		      "-1.110434514495777e-04"
+      ParamDataTypeStr	      "fixdt(1, j , k)"
+      OutDataTypeStr	      "fixdt(1, x , y)"
+      RndMeth		      "Nearest"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "b2"
+      SID		      "68"
+      Position		      [335, 400, 365, 430]
+      Gain		      "0.001986372745790"
+      ParamDataTypeStr	      "fixdt(1, j , k)"
+      OutDataTypeStr	      "fixdt(1, x , y)"
+      RndMeth		      "Nearest"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "b3"
+      SID		      "69"
+      Position		      [335, 550, 365, 580]
+      Gain		      "-0.003132237049933"
+      ParamDataTypeStr	      "fixdt(1, j , k)"
+      OutDataTypeStr	      "fixdt(1, x , y)"
+      RndMeth		      "Nearest"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "b4"
+      SID		      "70"
+      Position		      [335, 685, 365, 715]
+      Gain		      "0.002554337032496"
+      ParamDataTypeStr	      "fixdt(1, j , k)"
+      OutDataTypeStr	      "fixdt(1, x , y)"
+      RndMeth		      "Nearest"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "b5"
+      SID		      "99"
+      Position		      [335, 810, 365, 840]
+      Gain		      "4.793242905209623e-17"
+      ParamDataTypeStr	      "fixdt(1, j , k)"
+      OutDataTypeStr	      "fixdt(1, x , y)"
+      RndMeth		      "Nearest"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "b6"
+      SID		      "85"
+      Position		      [335, 935, 365, 965]
+      Gain		      "-0.002554337032497"
+      ParamDataTypeStr	      "fixdt(1, j , k)"
+      OutDataTypeStr	      "fixdt(1, x , y)"
+      RndMeth		      "Nearest"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "b7"
+      SID		      "86"
+      Position		      [335, 1070, 365, 1100]
+      Gain		      "0.003132237049933"
+      ParamDataTypeStr	      "fixdt(1, j , k)"
+      OutDataTypeStr	      "fixdt(1, x , y)"
+      RndMeth		      "Nearest"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "b8"
+      SID		      "87"
+      Position		      [335, 1220, 365, 1250]
+      Gain		      "-0.001986372745790"
+      ParamDataTypeStr	      "fixdt(1, j , k)"
+      OutDataTypeStr	      "fixdt(1, x , y)"
+      RndMeth		      "Nearest"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "b9"
+      SID		      "88"
+      Position		      [335, 1355, 365, 1385]
+      Gain		      "7.002792846443432e-04"
+      ParamDataTypeStr	      "fixdt(1, j , k)"
+      OutDataTypeStr	      "fixdt(1, x , y)"
+      RndMeth		      "Nearest"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "s1"
+      SID		      "71"
+      Ports		      [2, 1]
+      Position		      [445, 135, 475, 175]
+      ShowName		      off
+      IconShape		      "round"
+      InputSameDT	      off
+      OutDataTypeStr	      "fixdt(1, x , y)"
+      RndMeth		      "Nearest"
+      SaturateOnIntegerOverflow	off
+    }
+    Line {
+      SrcBlock		      "Adder3"
+      SrcPort		      1
+      DstBlock		      "Shift2"
+      DstPort		      1
+    }
+    Line {
+      Labels		      [0, 0]
+      SrcBlock		      "b1"
+      SrcPort		      1
+      DstBlock		      "Adder2"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Shift2"
+      SrcPort		      1
+      DstBlock		      "Adder2"
+      DstPort		      2
+    }
+    Line {
+      Labels		      [0, 0]
+      SrcBlock		      "Gain1"
+      SrcPort		      1
+      DstBlock		      "Adder2"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "Adder2"
+      SrcPort		      1
+      DstBlock		      "Shift1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Shift1"
+      SrcPort		      1
+      DstBlock		      "s1"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "s1"
+      SrcPort		      1
+      Points		      [0, -45; 150, 0]
+      Branch {
+	Points			[0, 170]
+	Branch {
+	  DstBlock		  "Gain1"
+	  DstPort		  1
+	}
+	Branch {
+	  Points		  [0, 135]
+	  Branch {
+	    DstBlock		    "a2"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 150]
+	    Branch {
+	      DstBlock		      "Gain8"
+	      DstPort		      1
+	    }
+	    Branch {
+	      Points		      [0, 135]
+	      Branch {
+		DstBlock		"a4"
+		DstPort			1
+	      }
+	      Branch {
+		Points			[0, 125]
+		Branch {
+		  Points		  [0, 125]
+		  Branch {
+		    DstBlock		    "Gain2"
+		    DstPort		    1
+		  }
+		  Branch {
+		    Points		    [0, 135]
+		    Branch {
+		    DstBlock		    "a7"
+		    DstPort		    1
+		    }
+		    Branch {
+		    Points		    [0, 150]
+		    Branch {
+		    DstBlock		    "Gain3"
+		    DstPort		    1
+		    }
+		    Branch {
+		    Points		    [0, 135]
+		    Branch {
+		    DstBlock		    "a9"
+		    DstPort		    1
+		    }
+		    Branch {
+		    Points		    [0, 145]
+		    DstBlock		    "a10"
+		    DstPort		    1
+		    }
+		    }
+		    }
+		  }
+		}
+		Branch {
+		  DstBlock		  "a5"
+		  DstPort		  1
+		}
+	      }
+	    }
+	  }
+	}
+      }
+      Branch {
+	Points			[155, 0]
+	Branch {
+	  DstBlock		  "To Workspace"
+	  DstPort		  1
+	}
+	Branch {
+	  Labels		  [2, 0]
+	  Points		  [0, 125]
+	  DstBlock		  "Scope"
+	  DstPort		  1
+	}
+      }
+    }
+    Line {
+      SrcBlock		      "Adder5"
+      SrcPort		      1
+      DstBlock		      "Shift4"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "b3"
+      SrcPort		      1
+      DstBlock		      "Adder4"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Shift4"
+      SrcPort		      1
+      DstBlock		      "Adder4"
+      DstPort		      2
+    }
+    Line {
+      Labels		      [0, 0]
+      SrcBlock		      "Gain8"
+      SrcPort		      1
+      DstBlock		      "Adder4"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "Adder4"
+      SrcPort		      1
+      DstBlock		      "Shift3"
+      DstPort		      1
+    }
+    Line {
+      Labels		      [0, 0]
+      SrcBlock		      "a4"
+      SrcPort		      1
+      DstBlock		      "Adder5"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "Shift3"
+      SrcPort		      1
+      DstBlock		      "Adder3"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "a2"
+      SrcPort		      1
+      DstBlock		      "Adder3"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "b2"
+      SrcPort		      1
+      DstBlock		      "Adder3"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "b4"
+      SrcPort		      1
+      DstBlock		      "Adder5"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "b0"
+      SrcPort		      1
+      Points		      [90, 0]
+      DstBlock		      "s1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "From\nWorkspace"
+      SrcPort		      1
+      Points		      [105, 0]
+      Branch {
+	Points			[0, 170]
+	Branch {
+	  Points		  [0, 135]
+	  Branch {
+	    Points		    [0, 150]
+	    Branch {
+	      DstBlock		      "b3"
+	      DstPort		      1
+	    }
+	    Branch {
+	      Points		      [0, 135]
+	      Branch {
+		DstBlock		"b4"
+		DstPort			1
+	      }
+	      Branch {
+		Points			[0, 125]
+		Branch {
+		  Points		  [0, 125]
+		  Branch {
+		    Points		    [0, 135]
+		    Branch {
+		    DstBlock		    "b7"
+		    DstPort		    1
+		    }
+		    Branch {
+		    Points		    [0, 150]
+		    Branch {
+		    DstBlock		    "b8"
+		    DstPort		    1
+		    }
+		    Branch {
+		    Points		    [0, 135]
+		    Branch {
+		    DstBlock		    "b9"
+		    DstPort		    1
+		    }
+		    Branch {
+		    Points		    [0, 145]
+		    DstBlock		    "b10"
+		    DstPort		    1
+		    }
+		    }
+		    }
+		  }
+		  Branch {
+		    DstBlock		    "b6"
+		    DstPort		    1
+		  }
+		}
+		Branch {
+		  DstBlock		  "b5"
+		  DstPort		  1
+		}
+	      }
+	    }
+	  }
+	  Branch {
+	    DstBlock		    "b2"
+	    DstPort		    1
+	  }
+	}
+	Branch {
+	  DstBlock		  "b1"
+	  DstPort		  1
+	}
+      }
+      Branch {
+	DstBlock		"b0"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Adder8"
+      SrcPort		      1
+      DstBlock		      "Shift7"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "b6"
+      SrcPort		      1
+      DstBlock		      "Adder7"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Shift7"
+      SrcPort		      1
+      DstBlock		      "Adder7"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Gain2"
+      SrcPort		      1
+      DstBlock		      "Adder7"
+      DstPort		      3
+    }
+    Line {
+      Name		      "s25"
+      Labels		      [0, 0]
+      SrcBlock		      "Adder7"
+      SrcPort		      1
+      DstBlock		      "Shift6"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Shift6"
+      SrcPort		      1
+      DstBlock		      "Adder6"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Adder10"
+      SrcPort		      1
+      DstBlock		      "Shift9"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "b8"
+      SrcPort		      1
+      DstBlock		      "Adder9"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Shift9"
+      SrcPort		      1
+      DstBlock		      "Adder9"
+      DstPort		      2
+    }
+    Line {
+      Labels		      [0, 0]
+      SrcBlock		      "Gain3"
+      SrcPort		      1
+      DstBlock		      "Adder9"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "Adder9"
+      SrcPort		      1
+      DstBlock		      "Shift8"
+      DstPort		      1
+    }
+    Line {
+      Labels		      [0, 0]
+      SrcBlock		      "a9"
+      SrcPort		      1
+      DstBlock		      "Adder10"
+      DstPort		      3
+    }
+    Line {
+      Labels		      [0, 0]
+      SrcBlock		      "Shift8"
+      SrcPort		      1
+      DstBlock		      "Adder8"
+      DstPort		      2
+    }
+    Line {
+      Labels		      [0, 0]
+      SrcBlock		      "a7"
+      SrcPort		      1
+      DstBlock		      "Adder8"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "b7"
+      SrcPort		      1
+      DstBlock		      "Adder8"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "b9"
+      SrcPort		      1
+      DstBlock		      "Adder10"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Adder11"
+      SrcPort		      1
+      DstBlock		      "Shift10"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Shift10"
+      SrcPort		      1
+      DstBlock		      "Adder10"
+      DstPort		      2
+    }
+    Line {
+      Labels		      [0, 0]
+      SrcBlock		      "a10"
+      SrcPort		      1
+      DstBlock		      "Adder11"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "b10"
+      SrcPort		      1
+      DstBlock		      "Adder11"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "b5"
+      SrcPort		      1
+      DstBlock		      "Adder6"
+      DstPort		      1
+    }
+    Line {
+      Labels		      [0, 0]
+      SrcBlock		      "a5"
+      SrcPort		      1
+      DstBlock		      "Adder6"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "Adder6"
+      SrcPort		      1
+      DstBlock		      "Shift5"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Shift5"
+      SrcPort		      1
+      DstBlock		      "Adder5"
+      DstPort		      2
+    }
+    Annotation {
+      Position		      [283, 177]
+    }
+    Annotation {
+      Name		      "a1"
+      Position		      [560, 306]
+    }
+    Annotation {
+      Position		      [298, 527]
+    }
+    Annotation {
+      Name		      "a3"
+      Position		      [560, 586]
+    }
+    Annotation {
+      Position		      [268, 847]
+    }
+    Annotation {
+      Name		      "a6"
+      Position		      [555, 971]
+    }
+    Annotation {
+      Position		      [283, 1197]
+    }
+    Annotation {
+      Name		      "a8"
+      Position		      [555, 1256]
+    }
+    Annotation {
+      Position		      [303, 774]
+    }
+    Annotation {
+      Name		      "Adder1"
+      Position		      [468, 181]
+    }
+    Annotation {
+      Name		      "s1"
+      Position		      [395, 105]
+    }
+    Annotation {
+      Name		      "s2"
+      Position		      [389, 273]
+    }
+    Annotation {
+      Name		      "s3"
+      Position		      [389, 409]
+    }
+    Annotation {
+      Name		      "s4"
+      Position		      [385, 557]
+    }
+    Annotation {
+      Name		      "s5"
+      Position		      [385, 694]
+    }
+    Annotation {
+      Name		      "s6"
+      Position		      [386, 816]
+    }
+    Annotation {
+      Name		      "s7"
+      Position		      [380, 945]
+    }
+    Annotation {
+      Name		      "s8"
+      Position		      [391, 1080]
+    }
+    Annotation {
+      Name		      "s9"
+      Position		      [397, 1231]
+    }
+    Annotation {
+      Name		      "s10"
+      Position		      [395, 1366]
+    }
+    Annotation {
+      Name		      "s11"
+      Position		      [389, 1510]
+    }
+    Annotation {
+      Name		      "s12"
+      Position		      [529, 1509]
+    }
+    Annotation {
+      Name		      "s13"
+      Position		      [467, 1489]
+    }
+    Annotation {
+      Name		      "s14"
+      Position		      [471, 1414]
+    }
+    Annotation {
+      Name		      "s15"
+      Position		      [529, 1363]
+    }
+    Annotation {
+      Name		      "s16"
+      Position		      [473, 1347]
+    }
+    Annotation {
+      Name		      "s17"
+      Position		      [470, 1270]
+    }
+    Annotation {
+      Name		      "s18"
+      Position		      [523, 1229]
+    }
+    Annotation {
+      Name		      "s19"
+      Position		      [466, 1205]
+    }
+    Annotation {
+      Name		      "s20"
+      Position		      [468, 1120]
+    }
+    Annotation {
+      Name		      "s21"
+      Position		      [514, 1076]
+    }
+    Annotation {
+      Name		      "s22"
+      Position		      [466, 1063]
+    }
+    Annotation {
+      Name		      "s23"
+      Position		      [467, 988]
+    }
+    Annotation {
+      Name		      "s24"
+      Position		      [528, 945]
+    }
+    Annotation {
+      Name		      "s26"
+      Position		      [467, 858]
+    }
+    Annotation {
+      Name		      "s27"
+      Position		      [522, 818]
+    }
+    Annotation {
+      Name		      "s28"
+      Position		      [467, 802]
+    }
+    Annotation {
+      Name		      "29"
+      Position		      [466, 734]
+    }
+    Annotation {
+      Name		      "s30"
+      Position		      [523, 695]
+    }
+    Annotation {
+      Name		      "s31"
+      Position		      [469, 674]
+    }
+    Annotation {
+      Name		      "s32"
+      Position		      [465, 608]
+    }
+    Annotation {
+      Name		      "s33"
+      Position		      [522, 554]
+    }
+    Annotation {
+      Name		      "s34"
+      Position		      [466, 537]
+    }
+    Annotation {
+      Name		      "s35"
+      Position		      [467, 458]
+    }
+    Annotation {
+      Name		      "s36"
+      Position		      [518, 406]
+    }
+    Annotation {
+      Name		      "s37"
+      Position		      [472, 390]
+    }
+    Annotation {
+      Name		      "s38"
+      Position		      [469, 320]
+    }
+    Annotation {
+      Name		      "s39"
+      Position		      [517, 272]
+    }
+    Annotation {
+      Name		      "s40"
+      Position		      [466, 259]
+    }
+    Annotation {
+      Name		      "s41"
+      Position		      [471, 191]
+    }
+    Annotation {
+      Name		      "s42"
+      Position		      [695, 102]
+    }
+  }
+}
+MatData {
+  NumRecords		  10
+  DataRecord {
+    Tag			    DataTag9
+    Data		    "  %)30     .    B     8    (     @         %    \"     $    !     0         %  0 $P    $    3    :&%S26"
+    "YH97)I=&5D3W!T:6]N        #@   #     &    \"     D\"        !0    @    !     0    $          @ !  $    "
+  }
+  DataRecord {
+    Tag			    DataTag8
+    Data		    "  %)30     .    B     8    (     @         %    \"     $    !     0         %  0 $P    $    3    :&%S26"
+    "YH97)I=&5D3W!T:6]N        #@   #     &    \"     D\"        !0    @    !     0    $          @ !  $    "
+  }
+  DataRecord {
+    Tag			    DataTag7
+    Data		    "  %)30     .    B     8    (     @         %    \"     $    !     0         %  0 $P    $    3    :&%S26"
+    "YH97)I=&5D3W!T:6]N        #@   #     &    \"     D\"        !0    @    !     0    $          @ !  $    "
+  }
+  DataRecord {
+    Tag			    DataTag6
+    Data		    "  %)30     .    B     8    (     @         %    \"     $    !     0         %  0 $P    $    3    :&%S26"
+    "YH97)I=&5D3W!T:6]N        #@   #     &    \"     D\"        !0    @    !     0    $          @ !  $    "
+  }
+  DataRecord {
+    Tag			    DataTag5
+    Data		    "  %)30     .    B     8    (     @         %    \"     $    !     0         %  0 $P    $    3    :&%S26"
+    "YH97)I=&5D3W!T:6]N        #@   #     &    \"     D\"        !0    @    !     0    $          @ !  $    "
+  }
+  DataRecord {
+    Tag			    DataTag4
+    Data		    "  %)30     .    B     8    (     @         %    \"     $    !     0         %  0 $P    $    3    :&%S26"
+    "YH97)I=&5D3W!T:6]N        #@   #     &    \"     D\"        !0    @    !     0    $          @ !  $    "
+  }
+  DataRecord {
+    Tag			    DataTag3
+    Data		    "  %)30     .    B     8    (     @         %    \"     $    !     0         %  0 $P    $    3    :&%S26"
+    "YH97)I=&5D3W!T:6]N        #@   #     &    \"     D\"        !0    @    !     0    $          @ !  $    "
+  }
+  DataRecord {
+    Tag			    DataTag2
+    Data		    "  %)30     .    B     8    (     @         %    \"     $    !     0         %  0 $P    $    3    :&%S26"
+    "YH97)I=&5D3W!T:6]N        #@   #     &    \"     D\"        !0    @    !     0    $          @ !  $    "
+  }
+  DataRecord {
+    Tag			    DataTag1
+    Data		    "  %)30     .    B     8    (     @         %    \"     $    !     0         %  0 $P    $    3    :&%S26"
+    "YH97)I=&5D3W!T:6]N        #@   #     &    \"     D\"        !0    @    !     0    $          @ !  $    "
+  }
+  DataRecord {
+    Tag			    DataTag0
+    Data		    "  %)30     .    B     8    (     @         %    \"     $    !     0         %  0 $P    $    3    :&%S26"
+    "YH97)I=&5D3W!T:6]N        #@   #     &    \"     D\"        !0    @    !     0    $          @ !  $    "
+  }
+}
